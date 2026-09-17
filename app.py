@@ -6,7 +6,7 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="Small Wins Bingo",
+    page_title="BDAV Bingo",
     page_icon="\U0001f3af",
     layout="centered",
     initial_sidebar_state="collapsed",
@@ -165,10 +165,10 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown('<div class="eyebrow">A tiny ritual for today</div>', unsafe_allow_html=True)
-st.title("Small Wins Bingo")
+st.markdown('<div class="eyebrow">September 2026 BDAV Roundtable</div>', unsafe_allow_html=True)
+st.title("BDAV Bingo")
 st.markdown(
-    '<div class="intro">Pick a square when you make it happen. Add a little note to remember the moment.</div>',
+    '<div class="intro">Find lab members that satisfy all nine squares to win</div>',
     unsafe_allow_html=True,
 )
 
