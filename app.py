@@ -10,30 +10,79 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-PROMPTS = [
-    "Drink a full glass of water",
-    "Take a five-minute stretch break",
-    "Send a kind message",
-    "Clear one small task",
-    "Step outside for fresh air",
-    "Write down one good thing",
-    "Listen to a favorite song",
-    "Make your bed",
-    "Read for ten minutes",
-    "Tidy one surface",
-    "Try a new recipe",
-    "Call someone you miss",
-    "Take three slow breaths",
-    "Learn one new fact",
-    "Plan tomorrow's first step",
-    "Put your phone away for a while",
-    "Notice something beautiful",
-    "Do one thing just for fun",
+prompts = [
+    "Puts pineapple on pizza",
+    "Has eaten something today they'd be embarrassed to admit",
+    "Can cook one dish really well",
+    "Has never had Vegemite",
+    "Drinks more than three coffees a day",
+    "Has a strong opinion about how to make instant noodles",
+    "Has lived in three or more cities",
+    "Speaks three or more languages",
+    "Has been to a country where they knew nobody",
+    "Grew up somewhere it snows",
+    "Has taken a flight longer than 15 hours",
+    "Has never been to a beach in Sydney",
+    "Has slept through an alarm and missed something important",
+    "Is scared of a very small animal",
+    "Has fallen asleep in a meeting or lecture",
+    "Has sent a message to completely the wrong person",
+    "Still has an ex's photo on their phone somewhere",
+    "Has re-watched the same show more than three times",
+    "Can play a musical instrument",
+    "Can do a handstand",
+    "Can whistle with two fingers",
+    "Can name all the planets in order",
+    "Can solve a Rubik's cube",
+    "Is double-jointed in some way",
+    "Has a pet, or desperately wants one",
+    "Went to bed after 2am this week",
+    "Has a tattoo",
+    "Has met someone mildly famous",
+    "Is wearing something older than five years",
+    "Their phone is on less than 20% battery right now",
+]
+
+prompts_chinese = [
+    "披萨上会放菠萝",
+    "今天吃了点不太好意思承认的东西",
+    "有一道拿手菜",
+    "从来没吃过 Vegemite",
+    "一天喝三杯以上咖啡",
+    "对泡面怎么做有强烈的看法",
+    "在三个或以上的城市住过",
+    "会说三种或以上语言",
+    "去过一个一个人都不认识的国家",
+    "在会下雪的地方长大",
+    "坐过超过 15 小时的飞机",
+    "从来没去过悉尼的海滩",
+    "睡过头错过过重要的事",
+    "怕某种很小的动物",
+    "在开会或上课时睡着过",
+    "把消息发错过人",
+    "手机里还留着前任的照片",
+    "同一部剧看过三遍以上",
+    "会一种乐器",
+    "会倒立",
+    "会用两根手指吹口哨",
+    "能按顺序说出所有行星",
+    "会拼魔方",
+    "身体某个部位很软（能做奇怪的动作）",
+    "有宠物，或者非常想养一只",
+    "这周有一天两点以后才睡",
+    "有纹身",
+    "见过某个小有名气的人",
+    "身上穿的有一件超过五年了",
+    "手机现在电量低于 20%",
 ]
 
 
-def new_board() -> list[str]:
-    return random.sample(PROMPTS, 9)
+if len(prompts) != len(prompts_chinese):
+    raise ValueError("English and Chinese prompt lists must have the same length")
+
+
+def new_board() -> list[int]:
+    return random.sample(range(len(prompts)), 9)
 
 
 def initialize_board() -> None:
@@ -43,6 +92,8 @@ def initialize_board() -> None:
         st.session_state.selected = [False] * 9
     if "notes" not in st.session_state:
         st.session_state.notes = [""] * 9
+    if "language" not in st.session_state:
+        st.session_state.language = "English"
 
 
 initialize_board()
@@ -179,6 +230,16 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+st.radio(
+    "Board language",
+    options=("English", "中文"),
+    key="language",
+    horizontal=True,
+    label_visibility="collapsed",
+)
+
+prompt_list = prompts if st.session_state.language == "English" else prompts_chinese
+
 completed = sum(st.session_state.selected)
 st.markdown(f'<div class="status">{completed} of 9 squares checked</div>', unsafe_allow_html=True)
 
@@ -189,7 +250,7 @@ for row in range(3):
         with column:
             with st.container(border=True):
                 button_kind = "primary" if st.session_state.selected[index] else "secondary"
-                label = ("✓  " if st.session_state.selected[index] else "○  ") + st.session_state.board[index]
+                label = ("✓  " if st.session_state.selected[index] else "○  ") + prompt_list[st.session_state.board[index]]
                 if st.button(
                     label,
                     key=f"square_{index}",
