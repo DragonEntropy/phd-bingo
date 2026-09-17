@@ -119,6 +119,46 @@
     {
       "english": "Their phone is on less than 20% battery right now",
       "chinese": "手机现在电量低于 20%"
+    },
+    {
+      "english": "Has a driver's license",
+      "chinese": "有驾照"
+    },
+    {
+      "english": "Has pulled an all-nighter",
+      "chinese": "熬过通宵"
+    },
+    {
+      "english": "Has more than one pet",
+      "chinese": "养了不止一只宠物"
+    },
+    {
+      "english": "Has one or more game consoles",
+      "chinese": "有一台或多台游戏机"
+    },
+    {
+      "english": "Has a phone that is neither an iPhone nor an Android",
+      "chinese": "手机既不是 iPhone 也不是安卓手机"
+    },
+    {
+      "english": "Has studied at three or more different universities",
+      "chinese": "在三所或以上不同的大学学习过"
+    },
+    {
+      "english": "Has worked at a hospital",
+      "chinese": "在医院工作过"
+    },
+    {
+      "english": "Is married or engaged",
+      "chinese": "已婚或订婚"
+    },
+    {
+      "english": "Reads manga",
+      "chinese": "看漫画"
+    },
+    {
+      "english": "Has never broken a bone",
+      "chinese": "从来没有骨折过"
     }
   ]
 }
