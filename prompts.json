@@ -1,0 +1,124 @@
+{
+  "prompts": [
+    {
+      "english": "Puts pineapple on pizza",
+      "chinese": "披萨上会放菠萝"
+    },
+    {
+      "english": "Has eaten something today they'd be embarrassed to admit",
+      "chinese": "今天吃了点不太好意思承认的东西"
+    },
+    {
+      "english": "Can cook one dish really well",
+      "chinese": "有一道拿手菜"
+    },
+    {
+      "english": "Has never had Vegemite",
+      "chinese": "从来没吃过 Vegemite"
+    },
+    {
+      "english": "Drinks more than three coffees a day",
+      "chinese": "一天喝三杯以上咖啡"
+    },
+    {
+      "english": "Has a strong opinion about how to make instant noodles",
+      "chinese": "对泡面怎么做有强烈的看法"
+    },
+    {
+      "english": "Has lived in three or more cities",
+      "chinese": "在三个或以上的城市住过"
+    },
+    {
+      "english": "Speaks three or more languages",
+      "chinese": "会说三种或以上语言"
+    },
+    {
+      "english": "Has been to a country where they knew nobody",
+      "chinese": "去过一个一个人都不认识的国家"
+    },
+    {
+      "english": "Grew up somewhere it snows",
+      "chinese": "在会下雪的地方长大"
+    },
+    {
+      "english": "Has taken a flight longer than 15 hours",
+      "chinese": "坐过超过 15 小时的飞机"
+    },
+    {
+      "english": "Has never been to a beach in Sydney",
+      "chinese": "从来没去过悉尼的海滩"
+    },
+    {
+      "english": "Has slept through an alarm and missed something important",
+      "chinese": "睡过头错过过重要的事"
+    },
+    {
+      "english": "Is scared of a very small animal",
+      "chinese": "怕某种很小的动物"
+    },
+    {
+      "english": "Has fallen asleep in a meeting or lecture",
+      "chinese": "在开会或上课时睡着过"
+    },
+    {
+      "english": "Has sent a message to completely the wrong person",
+      "chinese": "把消息发错过人"
+    },
+    {
+      "english": "Still has an ex's photo on their phone somewhere",
+      "chinese": "手机里还留着前任的照片"
+    },
+    {
+      "english": "Has re-watched the same show more than three times",
+      "chinese": "同一部剧看过三遍以上"
+    },
+    {
+      "english": "Can play a musical instrument",
+      "chinese": "会一种乐器"
+    },
+    {
+      "english": "Can do a handstand",
+      "chinese": "会倒立"
+    },
+    {
+      "english": "Can whistle with two fingers",
+      "chinese": "会用两根手指吹口哨"
+    },
+    {
+      "english": "Can name all the planets in order",
+      "chinese": "能按顺序说出所有行星"
+    },
+    {
+      "english": "Can solve a Rubik's cube",
+      "chinese": "会拼魔方"
+    },
+    {
+      "english": "Is double-jointed in some way",
+      "chinese": "身体某个部位很软（能做奇怪的动作）"
+    },
+    {
+      "english": "Has a pet, or desperately wants one",
+      "chinese": "有宠物，或者非常想养一只"
+    },
+    {
+      "english": "Went to bed after 2am this week",
+      "chinese": "这周有一天两点以后才睡"
+    },
+    {
+      "english": "Has a tattoo",
+      "chinese": "有纹身"
+    },
+    {
+      "english": "Has met someone mildly famous",
+      "chinese": "见过某个小有名气的人"
+    },
+    {
+      "english": "Is wearing something older than five years",
+      "chinese": "身上穿的有一件超过五年了"
+    },
+    {
+      "english": "Their phone is on less than 20% battery right now",
+      "chinese": "手机现在电量低于 20%"
+    }
+  ]
+}
